@@ -53,7 +53,7 @@ def main(cfg: RunConfig):
                               texture_resolution=cfg.texture_resolution, augmentations=cfg.augmentations).to(device)
     model.eval()
     cfg.render_dir.mkdir(parents=True, exist_ok=True)
-    dirs = ['front', 'left', 'back', 'right', 'overhead', 'bottom']
+    dirs = ['front', 'left', 'back', 'right']
 
     count_per_view = {d: 0 for d in dirs}
     global_ind = 0
