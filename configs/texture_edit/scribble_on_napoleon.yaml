@@ -1,0 +1,12 @@
+log:
+  exp_name: napoleon_scribbled
+guide:
+  text: "a photo of Einstein, {} view"
+  diffusion_name: stabilityai/stable-diffusion-2-depth
+  shape_scale: 0.6
+  append_direction: True
+  shape_path: shapes/napoleon.obj
+  reference_texture: textures/napoleon_texture.jpg
+  initial_texture: textures/napoleon_texture_with_scribble.jpg
+optim:  
+  seed: 2
